@@ -1,0 +1,17 @@
+{
+  "name": "chargenear",
+  "version": "1.0.0",
+  "description": "ChargeNear – Peer-to-Peer EV Charging Marketplace",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm run dev",
+    "client:build": "cd client && npm run build",
+    "server:setup": "cd server && npm run db:setup",
+    "db:push": "cd server && npm run prisma:push",
+    "db:seed": "cd server && npm run prisma:seed"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.5"
+  }
+}
